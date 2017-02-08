@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Spruce - Summer
+  m_Shader: {fileID: 4800000, guid: 0e352050fab175d45ae90624681ef0cb, type: 3}
+  m_ShaderKeywords: []
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: d73a688b5c487a647a1603307b231b5f, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: .899999976
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .372757345, g: .738806009, b: .181944743, a: 1}
+      data:
+        first:
+          name: _Secondary
+        second: {r: .216783151, g: .462686539, b: 0, a: 1}
+      data:
+        first:
+          name: _ColorTint
+        second: {r: .165872112, g: .313432813, b: .088883929, a: 1}
+      data:
+        first:
+          name: _SecondaryTint
+        second: {r: .0796020031, g: .171641767, b: 0, a: 1}

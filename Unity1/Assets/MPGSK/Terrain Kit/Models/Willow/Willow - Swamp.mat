@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Willow - Swamp
+  m_Shader: {fileID: 4800000, guid: 0e352050fab175d45ae90624681ef0cb, type: 3}
+  m_ShaderKeywords: []
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: d93a89ae401ea284a834d24a93ee1f27, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: .5
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .314691544, g: .343283594, b: .197259977, a: 1}
+      data:
+        first:
+          name: _Secondary
+        second: {r: .23880595, g: .115228049, b: 0, a: 1}
+      data:
+        first:
+          name: _ColorTint
+        second: {r: .544919431, g: .604477644, b: .072176449, a: 1}
+      data:
+        first:
+          name: _SecondaryTint
+        second: {r: .0688863546, g: .179104507, b: 0, a: 1}

@@ -1,0 +1,1104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  m_Layer: 0
+  m_Name: Procedural Terrain Creator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400002}
+  - 114: {fileID: 11400004}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: 0 - Temperate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  - 114: {fileID: 11400006}
+  - 114: {fileID: 11400008}
+  - 114: {fileID: 11400010}
+  m_Layer: 0
+  m_Name: 3 - Tundra
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  - 114: {fileID: 11400016}
+  - 114: {fileID: 11400014}
+  - 114: {fileID: 11400012}
+  m_Layer: 0
+  m_Name: 1 - Barren
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &100008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400008}
+  - 114: {fileID: 11400022}
+  - 114: {fileID: 11400020}
+  - 114: {fileID: 11400018}
+  m_Layer: 0
+  m_Name: 2 - Tropics
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400002}
+  - {fileID: 400006}
+  - {fileID: 400008}
+  - {fileID: 400004}
+  m_Father: {fileID: 0}
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+--- !u!4 &400008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b293943a1fb1b8541ad64da8dc6448fe, type: 3}
+  m_Name: 
+  terrain: {fileID: 0}
+  root: {fileID: 0}
+  seed: 63451
+  trees:
+  - prefab: {fileID: 100000, guid: 2595bcf7eb5a04c4d8863a9be3d89c33, type: 2}
+    idealHeight: 2
+    heightVariance: 1.75
+  - prefab: {fileID: 100000, guid: ac1d832e909cda144aecbf6ab41220a8, type: 2}
+    idealHeight: 5
+    heightVariance: 3
+  clearNow: 0
+  placeNow: 0
+  size: {x: 256, y: 256}
+  treeSize: 2
+  variation: .75
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  postMerge: 3
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836db80480f0fa8448f82dff72d0d292, type: 3}
+  m_Name: 
+  paintNow: 0
+  bakeResult: 0
+  terrain: {fileID: 0}
+  fogColor: {r: .70588237, g: .87843138, b: .996078432, a: 1}
+  slopeTexture: {fileID: 2800000, guid: b4bb91cbeb2289240a670d9b5e5de84f, type: 3}
+  shoreTexture: {fileID: 2800000, guid: 1a85f9364ba16974d9e707e4711ef1d0, type: 3}
+  grassTexture: {fileID: 2800000, guid: 632ad31618918a744bb25804daaf4639, type: 3}
+  hillTexture: {fileID: 2800000, guid: 2c54adc1de201434ca783900df95c476, type: 3}
+  tintTexture: {fileID: 2800000, guid: 447fc0063a9651b43980136942a46025, type: 3}
+  slopeNormal: {fileID: 2800000, guid: 85ade4fc8fd02d64a91dfcdd68199e54, type: 3}
+  textureTileSize: {x: 8, y: 8, z: 8, w: 8}
+  slopeRange: {x: 40, y: 55}
+  blendRange0: {x: .150000006, y: .400000006}
+  blendRange1: {x: 1.5, y: 3}
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477e93f36f56634479f9bd1e8afbcbba, type: 3}
+  m_Name: 
+  generateNow: 0
+  terrain: {fileID: 0}
+  paintTerrain: {fileID: 11400002}
+  placeTrees: {fileID: 11400000}
+  waterRenderer: {fileID: 0}
+  waterMaterial: {fileID: 0}
+  seed: 63451
+  noiseDensity1: 6
+  curve1:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .321923554
+      value: .363940805
+      inSlope: .068452552
+      outSlope: .068452552
+      tangentMode: 0
+    - time: .416824758
+      value: .428155303
+      inSlope: 1.22760165
+      outSlope: 1.22760165
+      tangentMode: 0
+    - time: .459999979
+      value: .5
+      inSlope: .00666367728
+      outSlope: .00666367728
+      tangentMode: 0
+    - time: .680000007
+      value: .599999964
+      inSlope: 1.24094582
+      outSlope: 1.24094582
+      tangentMode: 0
+    - time: .781933844
+      value: .72178328
+      inSlope: 2.03505564
+      outSlope: 2.03505564
+      tangentMode: 0
+    - time: .849999964
+      value: .75999999
+      inSlope: 1.49011612
+      outSlope: 1.49011612
+      tangentMode: 0
+    - time: .911165833
+      value: .864373028
+      inSlope: 1.53541565
+      outSlope: 1.53541565
+      tangentMode: 0
+    - time: 1
+      value: .899999976
+      inSlope: .0114741363
+      outSlope: .0114741363
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  noiseDensity2: 10
+  curve2:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .199999988
+      inSlope: .147581711
+      outSlope: .147581711
+      tangentMode: 0
+    - time: .359999985
+      value: .429999977
+      inSlope: 1.16634476
+      outSlope: 1.16634476
+      tangentMode: 0
+    - time: .48999998
+      value: .699999988
+      inSlope: .0792763829
+      outSlope: .0792763829
+      tangentMode: 0
+    - time: .729999959
+      value: .589999974
+      inSlope: -.982834697
+      outSlope: -.982834697
+      tangentMode: 0
+    - time: 1
+      value: .5
+      inSlope: -.0231269281
+      outSlope: -.0231269281
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  controlDensity: 8
+  control:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: .00795747526
+      outSlope: .00795747526
+      tangentMode: 0
+    - time: .449999988
+      value: 0
+      inSlope: -0
+      outSlope: -0
+      tangentMode: 0
+    - time: .550000012
+      value: 1
+      inSlope: .000320060499
+      outSlope: .000320060499
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: -.0008190808
+      outSlope: -.0008190808
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  distanceAdjustment:
+    serializedVersion: 2
+    m_Curve:
+    - time: .699999988
+      value: 0
+      inSlope: 1.06671381
+      outSlope: 1.06671381
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 5.14856482
+      outSlope: 5.14856482
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  distanceMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .699999988
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .125
+      value: .519999981
+      inSlope: -3.28802538
+      outSlope: -3.28802538
+      tangentMode: 0
+    - time: .25
+      value: .299999982
+      inSlope: -.0923189223
+      outSlope: -.0923189223
+      tangentMode: 0
+    - time: .699999988
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  heightAdjustment:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 10
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 10
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477e93f36f56634479f9bd1e8afbcbba, type: 3}
+  m_Name: 
+  generateNow: 0
+  terrain: {fileID: 0}
+  paintTerrain: {fileID: 11400008}
+  placeTrees: {fileID: 11400010}
+  waterRenderer: {fileID: 0}
+  waterMaterial: {fileID: 0}
+  seed: 63451
+  noiseDensity1: 6
+  curve1:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .321923554
+      value: .363940805
+      inSlope: .068452552
+      outSlope: .068452552
+      tangentMode: 0
+    - time: .416824758
+      value: .428155303
+      inSlope: 1.22760165
+      outSlope: 1.22760165
+      tangentMode: 0
+    - time: .459999979
+      value: .5
+      inSlope: .00666367728
+      outSlope: .00666367728
+      tangentMode: 0
+    - time: .680000007
+      value: .599999964
+      inSlope: 1.24094582
+      outSlope: 1.24094582
+      tangentMode: 0
+    - time: .781933844
+      value: .72178328
+      inSlope: 2.03505564
+      outSlope: 2.03505564
+      tangentMode: 0
+    - time: .849999964
+      value: .75999999
+      inSlope: 1.49011612
+      outSlope: 1.49011612
+      tangentMode: 0
+    - time: .911165833
+      value: .864373028
+      inSlope: 1.53541565
+      outSlope: 1.53541565
+      tangentMode: 0
+    - time: 1
+      value: .899999976
+      inSlope: .0114741363
+      outSlope: .0114741363
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  noiseDensity2: 10
+  curve2:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .199999988
+      inSlope: .147581711
+      outSlope: .147581711
+      tangentMode: 0
+    - time: .359999985
+      value: .429999977
+      inSlope: 1.16634476
+      outSlope: 1.16634476
+      tangentMode: 0
+    - time: .48999998
+      value: .699999988
+      inSlope: .0792763829
+      outSlope: .0792763829
+      tangentMode: 0
+    - time: .729999959
+      value: .589999974
+      inSlope: -.982834697
+      outSlope: -.982834697
+      tangentMode: 0
+    - time: 1
+      value: .5
+      inSlope: -.0231269281
+      outSlope: -.0231269281
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  controlDensity: 8
+  control:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: .00795747526
+      outSlope: .00795747526
+      tangentMode: 0
+    - time: .449999988
+      value: 0
+      inSlope: -0
+      outSlope: -0
+      tangentMode: 0
+    - time: .550000012
+      value: 1
+      inSlope: .000320060499
+      outSlope: .000320060499
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: -.0008190808
+      outSlope: -.0008190808
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  distanceAdjustment:
+    serializedVersion: 2
+    m_Curve:
+    - time: .699999988
+      value: 0
+      inSlope: 1.06671381
+      outSlope: 1.06671381
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 5.14856482
+      outSlope: 5.14856482
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  distanceMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .699999988
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .125
+      value: .519999981
+      inSlope: -3.28802538
+      outSlope: -3.28802538
+      tangentMode: 0
+    - time: .25
+      value: .299999982
+      inSlope: -.0923189223
+      outSlope: -.0923189223
+      tangentMode: 0
+    - time: .699999988
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  heightAdjustment:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 10
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 10
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836db80480f0fa8448f82dff72d0d292, type: 3}
+  m_Name: 
+  paintNow: 0
+  bakeResult: 0
+  terrain: {fileID: 0}
+  fogColor: {r: .70588237, g: .87843138, b: .996078432, a: 1}
+  slopeTexture: {fileID: 2800000, guid: b5a5c1c271ab55d458b4edcd788af014, type: 3}
+  shoreTexture: {fileID: 2800000, guid: 6fe400e0eeed7f540a6675cb957fa22d, type: 3}
+  grassTexture: {fileID: 2800000, guid: a5e5ea373dda06f47a1542a282349b82, type: 3}
+  hillTexture: {fileID: 2800000, guid: 735b4dc0e574964499c31f6539452095, type: 3}
+  tintTexture: {fileID: 2800000, guid: 1a9c13f2aa782014b8173ec2333ed3be, type: 3}
+  slopeNormal: {fileID: 2800000, guid: 341d2d054eb9e274bba982baca042e83, type: 3}
+  textureTileSize: {x: 12, y: 8, z: 8, w: 6}
+  slopeRange: {x: 40, y: 55}
+  blendRange0: {x: .150000006, y: .400000006}
+  blendRange1: {x: 1.5, y: 3}
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b293943a1fb1b8541ad64da8dc6448fe, type: 3}
+  m_Name: 
+  terrain: {fileID: 0}
+  root: {fileID: 0}
+  seed: 63451
+  trees:
+  - prefab: {fileID: 100000, guid: 4590f73739164584997db1c8658973d5, type: 2}
+    idealHeight: 3
+    heightVariance: 1.75
+  - prefab: {fileID: 100000, guid: 5ec3e6118ef29754c91043e99bacfbb2, type: 2}
+    idealHeight: 5
+    heightVariance: 3
+  - prefab: {fileID: 100000, guid: dfd47986ed10e9340b497311c06fd4ad, type: 2}
+    idealHeight: .75
+    heightVariance: .5
+  - prefab: {fileID: 100000, guid: ac1d832e909cda144aecbf6ab41220a8, type: 2}
+    idealHeight: 1.25
+    heightVariance: .5
+  clearNow: 0
+  placeNow: 0
+  size: {x: 256, y: 256}
+  treeSize: 2
+  variation: .75
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  postMerge: 3
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b293943a1fb1b8541ad64da8dc6448fe, type: 3}
+  m_Name: 
+  terrain: {fileID: 0}
+  root: {fileID: 0}
+  seed: 63451
+  trees:
+  - prefab: {fileID: 100000, guid: 5ef118bdfc9d7be44be35dba4324f7ef, type: 2}
+    idealHeight: 2
+    heightVariance: 1.75
+  - prefab: {fileID: 100000, guid: 5aad099a41af83d46b12d93bb4428d85, type: 2}
+    idealHeight: 5
+    heightVariance: 3
+  clearNow: 0
+  placeNow: 0
+  size: {x: 256, y: 256}
+  treeSize: 2
+  variation: .75
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  postMerge: 3
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836db80480f0fa8448f82dff72d0d292, type: 3}
+  m_Name: 
+  paintNow: 0
+  bakeResult: 0
+  terrain: {fileID: 0}
+  fogColor: {r: .70588237, g: .87843138, b: .996078432, a: 1}
+  slopeTexture: {fileID: 2800000, guid: add77dcb109713a4fbc684fcf9eaf652, type: 3}
+  shoreTexture: {fileID: 2800000, guid: 1a85f9364ba16974d9e707e4711ef1d0, type: 3}
+  grassTexture: {fileID: 2800000, guid: 54d9b3a6a1517be44bd05c5a8d8660a8, type: 3}
+  hillTexture: {fileID: 2800000, guid: 2c54adc1de201434ca783900df95c476, type: 3}
+  tintTexture: {fileID: 2800000, guid: 1a9c13f2aa782014b8173ec2333ed3be, type: 3}
+  slopeNormal: {fileID: 2800000, guid: 16abfcf428dd0bb49a2f471b70df9af2, type: 3}
+  textureTileSize: {x: 8, y: 8, z: 8, w: 8}
+  slopeRange: {x: 40, y: 55}
+  blendRange0: {x: .150000006, y: .400000006}
+  blendRange1: {x: 1.5, y: 3}
+--- !u!114 &11400016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477e93f36f56634479f9bd1e8afbcbba, type: 3}
+  m_Name: 
+  generateNow: 0
+  terrain: {fileID: 0}
+  paintTerrain: {fileID: 11400014}
+  placeTrees: {fileID: 11400012}
+  waterRenderer: {fileID: 0}
+  waterMaterial: {fileID: 0}
+  seed: 63451
+  noiseDensity1: 6
+  curve1:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .321923554
+      value: .363940805
+      inSlope: .068452552
+      outSlope: .068452552
+      tangentMode: 0
+    - time: .416824758
+      value: .428155303
+      inSlope: 1.22760165
+      outSlope: 1.22760165
+      tangentMode: 0
+    - time: .459999979
+      value: .5
+      inSlope: .00666367728
+      outSlope: .00666367728
+      tangentMode: 0
+    - time: .680000007
+      value: .599999964
+      inSlope: 1.24094582
+      outSlope: 1.24094582
+      tangentMode: 0
+    - time: .781933844
+      value: .72178328
+      inSlope: 2.03505564
+      outSlope: 2.03505564
+      tangentMode: 0
+    - time: .849999964
+      value: .75999999
+      inSlope: 1.49011612
+      outSlope: 1.49011612
+      tangentMode: 0
+    - time: .911165833
+      value: .864373028
+      inSlope: 1.53541565
+      outSlope: 1.53541565
+      tangentMode: 0
+    - time: 1
+      value: .899999976
+      inSlope: .0114741363
+      outSlope: .0114741363
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  noiseDensity2: 10
+  curve2:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .199999988
+      inSlope: .147581711
+      outSlope: .147581711
+      tangentMode: 0
+    - time: .359999985
+      value: .429999977
+      inSlope: 1.16634476
+      outSlope: 1.16634476
+      tangentMode: 0
+    - time: .48999998
+      value: .699999988
+      inSlope: .0792763829
+      outSlope: .0792763829
+      tangentMode: 0
+    - time: .729999959
+      value: .589999974
+      inSlope: -.982834697
+      outSlope: -.982834697
+      tangentMode: 0
+    - time: 1
+      value: .5
+      inSlope: -.0231269281
+      outSlope: -.0231269281
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  controlDensity: 8
+  control:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: .00795747526
+      outSlope: .00795747526
+      tangentMode: 0
+    - time: .449999988
+      value: 0
+      inSlope: -0
+      outSlope: -0
+      tangentMode: 0
+    - time: .550000012
+      value: 1
+      inSlope: .000320060499
+      outSlope: .000320060499
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: -.0008190808
+      outSlope: -.0008190808
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  distanceAdjustment:
+    serializedVersion: 2
+    m_Curve:
+    - time: .699999988
+      value: 0
+      inSlope: 1.06671381
+      outSlope: 1.06671381
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 5.14856482
+      outSlope: 5.14856482
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  distanceMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .699999988
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .125
+      value: .519999981
+      inSlope: -3.28802538
+      outSlope: -3.28802538
+      tangentMode: 0
+    - time: .25
+      value: .299999982
+      inSlope: -.0923189223
+      outSlope: -.0923189223
+      tangentMode: 0
+    - time: .699999988
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  heightAdjustment:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 10
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 10
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11400018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b293943a1fb1b8541ad64da8dc6448fe, type: 3}
+  m_Name: 
+  terrain: {fileID: 0}
+  root: {fileID: 0}
+  seed: 63451
+  trees:
+  - prefab: {fileID: 100000, guid: 5aad099a41af83d46b12d93bb4428d85, type: 2}
+    idealHeight: 2
+    heightVariance: 1.75
+  - prefab: {fileID: 100000, guid: 2595bcf7eb5a04c4d8863a9be3d89c33, type: 2}
+    idealHeight: 5
+    heightVariance: 3
+  - prefab: {fileID: 100000, guid: d202a86ee42defd47a26258a74e29573, type: 2}
+    idealHeight: 2
+    heightVariance: 1.25
+  - prefab: {fileID: 100000, guid: c3d3bc5a358e82c4da96d84697f5c98b, type: 2}
+    idealHeight: 2
+    heightVariance: 1.25
+  clearNow: 0
+  placeNow: 0
+  size: {x: 256, y: 256}
+  treeSize: 2
+  variation: .75
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  postMerge: 3
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 836db80480f0fa8448f82dff72d0d292, type: 3}
+  m_Name: 
+  paintNow: 1
+  bakeResult: 0
+  terrain: {fileID: 0}
+  fogColor: {r: .996078432, g: .996078432, b: .886274517, a: 1}
+  slopeTexture: {fileID: 2800000, guid: 3a00241b5bd9c5e4ab8afdf0824bac0d, type: 3}
+  shoreTexture: {fileID: 2800000, guid: cef01c8127da24543a011be2c2dc9b88, type: 3}
+  grassTexture: {fileID: 2800000, guid: 3d682dd33d5464b4abcff53b05cdf65b, type: 3}
+  hillTexture: {fileID: 2800000, guid: 2c54adc1de201434ca783900df95c476, type: 3}
+  tintTexture: {fileID: 2800000, guid: 91b7333ed6553e04d86a4de0a87080c4, type: 3}
+  slopeNormal: {fileID: 2800000, guid: 85ade4fc8fd02d64a91dfcdd68199e54, type: 3}
+  textureTileSize: {x: 16, y: 8, z: 8, w: 8}
+  slopeRange: {x: 40, y: 55}
+  blendRange0: {x: .150000006, y: .600000024}
+  blendRange1: {x: 1.5, y: 3}
+--- !u!114 &11400022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 477e93f36f56634479f9bd1e8afbcbba, type: 3}
+  m_Name: 
+  generateNow: 0
+  terrain: {fileID: 0}
+  paintTerrain: {fileID: 11400020}
+  placeTrees: {fileID: 11400018}
+  waterRenderer: {fileID: 0}
+  waterMaterial: {fileID: 0}
+  seed: 63451
+  noiseDensity1: 6
+  curve1:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .321923554
+      value: .363940805
+      inSlope: .068452552
+      outSlope: .068452552
+      tangentMode: 0
+    - time: .416824758
+      value: .428155303
+      inSlope: 1.22760165
+      outSlope: 1.22760165
+      tangentMode: 0
+    - time: .459999979
+      value: .5
+      inSlope: .00666367728
+      outSlope: .00666367728
+      tangentMode: 0
+    - time: .680000007
+      value: .599999964
+      inSlope: 1.24094582
+      outSlope: 1.24094582
+      tangentMode: 0
+    - time: .781933844
+      value: .72178328
+      inSlope: 2.03505564
+      outSlope: 2.03505564
+      tangentMode: 0
+    - time: .849999964
+      value: .75999999
+      inSlope: 1.49011612
+      outSlope: 1.49011612
+      tangentMode: 0
+    - time: .911165833
+      value: .864373028
+      inSlope: 1.53541565
+      outSlope: 1.53541565
+      tangentMode: 0
+    - time: 1
+      value: .899999976
+      inSlope: .0114741363
+      outSlope: .0114741363
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  noiseDensity2: 10
+  curve2:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .199999988
+      inSlope: .147581711
+      outSlope: .147581711
+      tangentMode: 0
+    - time: .359999985
+      value: .429999977
+      inSlope: 1.16634476
+      outSlope: 1.16634476
+      tangentMode: 0
+    - time: .48999998
+      value: .699999988
+      inSlope: .0792763829
+      outSlope: .0792763829
+      tangentMode: 0
+    - time: .729999959
+      value: .589999974
+      inSlope: -.982834697
+      outSlope: -.982834697
+      tangentMode: 0
+    - time: 1
+      value: .5
+      inSlope: -.0231269281
+      outSlope: -.0231269281
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  controlDensity: 8
+  control:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: .00795747526
+      outSlope: .00795747526
+      tangentMode: 0
+    - time: .449999988
+      value: 0
+      inSlope: -0
+      outSlope: -0
+      tangentMode: 0
+    - time: .550000012
+      value: 1
+      inSlope: .000320060499
+      outSlope: .000320060499
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: -.0008190808
+      outSlope: -.0008190808
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  distanceAdjustment:
+    serializedVersion: 2
+    m_Curve:
+    - time: .699999988
+      value: 0
+      inSlope: 1.06671381
+      outSlope: 1.06671381
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 5.14856482
+      outSlope: 5.14856482
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  distanceMultiplier:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: .699999988
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: .125
+      value: .519999981
+      inSlope: -3.28802538
+      outSlope: -3.28802538
+      tangentMode: 0
+    - time: .25
+      value: .299999982
+      inSlope: -.0923189223
+      outSlope: -.0923189223
+      tangentMode: 0
+    - time: .699999988
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  heightAdjustment:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 10
+    - time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 1
+      tangentMode: 10
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
